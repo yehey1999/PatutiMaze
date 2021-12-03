@@ -27,7 +27,7 @@ namespace PatutiMaze
             {false,false,false, true, true,false,false,false,false,false},
             {false,false,false,false, true, true,false,false,false,false},
             {false,false,false,false,false, true,false,false,false,false},
-            {false,false,false,false,false, true,false,false,false,false}
+            {false,false,false,false,false, true,false,false,false,false} 
         };
         Stack<string> path = new Stack<string>(), allpath = new Stack<string>();
 
@@ -35,12 +35,15 @@ namespace PatutiMaze
 
         bool patutiMoving = false, tocheck = false;
 
+        int lives = 5;
+        string message = "";
+
         [Obsolete]
         public MainPage()
         {
             InitializeComponent();
             Assembly assembly = GetType().GetTypeInfo().Assembly;
-            using (Stream stream = assembly.GetManifestResourceStream("PatutiM.idle1.png"))
+            using (Stream stream = assembly.GetManifestResourceStream("PatutiMaze.idle1.png"))
             {
                 patuti = SKBitmap.Decode(stream);
                 var dstInfo = new SKImageInfo((int)(mainDisplayInfo.Width / 12),
@@ -49,7 +52,7 @@ namespace PatutiMaze
                 patuti = patuti.Resize(dstInfo, SKBitmapResizeMethod.Hamming);
                 targetX = patutiX = patuti.Width;
             }
-            using (Stream stream = assembly.GetManifestResourceStream("PatutiM.box1.png"))
+            using (Stream stream = assembly.GetManifestResourceStream("PatutiMaze.box1.png"))
             {
                 box = SKBitmap.Decode(stream);
                 var dstInfo = new SKImageInfo((int)(mainDisplayInfo.Width / 12),
@@ -58,7 +61,7 @@ namespace PatutiMaze
                 box = box.Resize(dstInfo, SKBitmapResizeMethod.Hamming);
             }
 
-            using (Stream stream = assembly.GetManifestResourceStream("PatutiM.steelbox.png"))
+            using (Stream stream = assembly.GetManifestResourceStream("PatutiMaze.steelbox.png"))
             {
                 steelbox = SKBitmap.Decode(stream);
                 var dstInfo = new SKImageInfo(box.Width, box.Height);
@@ -109,6 +112,7 @@ namespace PatutiMaze
 
         private void canvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
         {
+            message = "";
             SKImageInfo info = e.Info;
             SKSurface surface = e.Surface;
             SKCanvas canvas = surface.Canvas;
@@ -125,6 +129,7 @@ namespace PatutiMaze
                     if (allpath.Contains((j * box.Width) + ":" + (i * box.Width)) && path.Contains((j * box.Width) + ":" + (i * box.Width)))
                         continue;
                     canvas.DrawBitmap(steelbox, j * steelbox.Width, i * steelbox.Height);
+                    
                 }
             }
             for (int i = 1; i <= 10; i++)
@@ -189,9 +194,22 @@ namespace PatutiMaze
                 if (tocheck && patutiY > 1)
                 {
                     allpath.Push(patutiX + ":" + patutiY);
+                    if (((int)(patutiY / patuti.Width) - 1) == 9 && ((int)(patutiX / patuti.Width) - 1) == 5)
+                    {
+                        messageLabel.Text = "You have taken the good path";
+                    }
+
                     if (mat[(int)(patutiY / patuti.Width) - 1, (int)(patutiX / patuti.Width) - 1])
                     {
                         path.Push(patutiX + ":" + patutiY);
+                    }
+                    else {
+                        lives--;
+                        livesLabel.Text = lives.ToString();
+                        if (lives == 0)
+                        {
+                            messageLabel.Text = "You failed.";
+                        }
                     }
                     tocheck = false;
                 }

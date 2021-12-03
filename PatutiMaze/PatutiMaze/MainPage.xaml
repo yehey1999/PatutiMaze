@@ -7,16 +7,23 @@
     <Grid>
         <skia:SKCanvasView x:Name="canvasView" PaintSurface="canvasView_PaintSurface"/>
         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="End">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
-            <Button Text="Up" x:Name="up" CommandParameter="1" Clicked="Controls_Clicked" Grid.Column="0" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Down" x:Name="down" CommandParameter="2" Clicked="Controls_Clicked" Grid.Column="1" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Left" x:Name="left" CommandParameter="3" Clicked="Controls_Clicked" Grid.Column="2" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Right" x:Name="right" CommandParameter="4" Clicked="Controls_Clicked" Grid.Column="3" HorizontalOptions="FillAndExpand"/>
+            <Label Grid.Row="0" Grid.ColumnSpan="5" x:Name="messageLabel" Text="Good Luck in find your path" FontSize="24" TextColor="White" Grid.Column="0"/>
+            <Button Grid.Row="1" Text="Up" x:Name="up" CommandParameter="1" Clicked="Controls_Clicked" Grid.Column="0" HorizontalOptions="FillAndExpand"/>
+            <Button Grid.Row="1" Text="Down" x:Name="down" CommandParameter="2" Clicked="Controls_Clicked" Grid.Column="1" HorizontalOptions="FillAndExpand"/>
+            <Button Grid.Row="1" Text="Left" x:Name="left" CommandParameter="3" Clicked="Controls_Clicked" Grid.Column="2" HorizontalOptions="FillAndExpand"/>
+            <Button Grid.Row="1" Text="Right" x:Name="right" CommandParameter="4" Clicked="Controls_Clicked" Grid.Column="3" HorizontalOptions="FillAndExpand"/>
+            <Label Grid.Row="1" x:Name="livesLabel" Text="5" FontSize="36" TextColor="White" Grid.Column="4"/>
         </Grid>
     </Grid>
 

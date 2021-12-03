@@ -590,3 +590,4 @@ D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze.Android\obj\Debug\110\stamp\_Conve
 D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze.Android\obj\Debug\110\PatutiMaze.Android.csproj.CopyComplete
