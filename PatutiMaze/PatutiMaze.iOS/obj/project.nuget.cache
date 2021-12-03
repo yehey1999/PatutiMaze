@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "v2pe9y90IBzpeeIT3kmxAUc5az+qSGkQ9OaiKnJihtqTWFRxyBU5hMhKx17d7SKHk45jVJSNPLEMVv/W0XrB6Q==",
+  "success": true,
+  "projectFilePath": "D:\\Seatworks\\PatutiMaze\\PatutiMaze\\PatutiMaze.iOS\\PatutiMaze.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rosal\\.nuget\\packages\\skiasharp\\2.80.3\\skiasharp.2.80.3.nupkg.sha512",
+    "C:\\Users\\rosal\\.nuget\\packages\\skiasharp.views\\2.80.3\\skiasharp.views.2.80.3.nupkg.sha512",
+    "C:\\Users\\rosal\\.nuget\\packages\\skiasharp.views.forms\\2.80.3\\skiasharp.views.forms.2.80.3.nupkg.sha512",
+    "C:\\Users\\rosal\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

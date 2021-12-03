@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="PatutiMaze.MainPage">
+
+    <Grid>
+        <skia:SKCanvasView x:Name="canvasView" PaintSurface="canvasView_PaintSurface"/>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="End">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="Up" x:Name="up" CommandParameter="1" Clicked="Controls_Clicked" Grid.Column="0" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Down" x:Name="down" CommandParameter="2" Clicked="Controls_Clicked" Grid.Column="1" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Left" x:Name="left" CommandParameter="3" Clicked="Controls_Clicked" Grid.Column="2" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Right" x:Name="right" CommandParameter="4" Clicked="Controls_Clicked" Grid.Column="3" HorizontalOptions="FillAndExpand"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>

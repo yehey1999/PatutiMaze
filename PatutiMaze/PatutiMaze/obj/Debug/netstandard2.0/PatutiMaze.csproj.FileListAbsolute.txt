@@ -1,0 +1,15 @@
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\bin\Debug\netstandard2.0\PatutiMaze.deps.json
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\bin\Debug\netstandard2.0\PatutiMaze.dll
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\bin\Debug\netstandard2.0\ref\PatutiMaze.dll
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\bin\Debug\netstandard2.0\PatutiMaze.pdb
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\PatutiMaze.csproj.AssemblyReference.cache
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\PatutiMaze.GeneratedMSBuildEditorConfig.editorconfig
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\PatutiMaze.AssemblyInfoInputs.cache
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\PatutiMaze.AssemblyInfo.cs
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\PatutiMaze.csproj.CoreCompileInputs.cache
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\PatutiMaze.dll
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\ref\PatutiMaze.dll
+D:\Seatworks\PatutiMaze\PatutiMaze\PatutiMaze\obj\Debug\netstandard2.0\PatutiMaze.pdb
